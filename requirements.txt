@@ -1,0 +1,11 @@
+tqdm
+python-dotenv
+torch==2.4.0+cu118
+scikit_learn==1.2.2
+ipython
+pandas
+numpy
+matplotlib
+tabulate
+scipy
+git+https://github.com/Louis-Li-dev/ML_tool_kit
