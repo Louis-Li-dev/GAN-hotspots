@@ -12,7 +12,7 @@ class RandomForestManager:
             n_estimators=self.n_estimators,
             max_depth=self.max_depth,
             random_state=self.random_state,
-            oob_score=True,
+            oob_score=False,
             n_jobs=-1
         )
 
@@ -21,7 +21,6 @@ class RandomForestManager:
         
         self.model.fit(features, targets)
         train_mse = self.model.score(features, targets)
-        self.model.oob_score_
         if verbose:
             print(f"Train MSE: {train_mse:.4f}")
 
